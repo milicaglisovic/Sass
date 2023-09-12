@@ -68,7 +68,7 @@ html {
 body {
   font-size: 1.6rem;
   color: #000000;
-  background-color: #eeeee;
+  background-color: #eeeeee;
   font-family: "Rubik", sans-serif;
   font-weight: 400; }
 
@@ -449,14 +449,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   padding: 30px 0;
   background-color: #ffffff; }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Sep 11, 2023, 12:37:58 PM
-    Author     : Korisnik
-*/
+.course-section {
+  padding: 50px 0; }
+  .course-section table {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    width: 100%; }
+    .course-section table caption {
+      text-align: left;
+      font-style: italic; }
+    .course-section table th, .course-section table td {
+      border: 1px solid #000000;
+      padding: 10px 5px; }
+    .course-section table thead {
+      background-color: #8a059e; }
+      .course-section table thead th {
+        color: #ffffff;
+        border: 1px solid #ffffff; }
+    .course-section table tbody tr:nth-of-type(even) {
+      background-color: #ffffff; }
+    .course-section table tbody tr:hover {
+      background-color: #c8c8c8; }
+
 /*
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
