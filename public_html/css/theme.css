@@ -39,9 +39,37 @@ h1, h2, h3, h4, h5, h6 {
 header {
   padding: 20px 0;
   background-color: #8a059e; }
+  header .branding {
+    text-align: center; }
+    header .branding a {
+      color: #ffffff; }
+  header nav ul {
+    padding-left: 0;
+    list-style: none; }
+    header nav ul li a {
+      display: block;
+      padding: 5px 0;
+      color: #ffffff;
+      text-align: center;
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700; }
+      header nav ul li a:hover, header nav ul li a.active {
+        color: #18b304; }
 
-header a {
-  color: #ffffff; }
+@media (min-width: 768px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .container nav ul {
+      display: flex; }
+      header .container nav ul li a {
+        padding: 5px 5px; } }
+
+@media (min-width: 992px) {
+  header .container nav ul li a {
+    padding: 5px 15px; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
