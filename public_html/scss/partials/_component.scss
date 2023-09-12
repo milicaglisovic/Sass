@@ -20,32 +20,50 @@ $btn-dark:$black;
 }
 .btn-default{
     @extend %btn;
-    background-color:$btn-default;
+    background-color:rgba($btn-default,0.7);
     color:$btn-default-color;
+    &:hover{
+        background-color: darken($btn-default,10%);
+    }
 }
 
 .btn-danger{
     @extend %btn;
-    background-color:$btn-danger;
+    background-color:rgba($btn-danger,0.7);
     color:$btn-default-color;
+    &:hover{
+        background-color: darken($btn-danger,10%);
+    }
 }
 .btn-success{
     @extend %btn;
-    background-color:$btn-success;
+    background-color:rgba($btn-success,0.7);
     color:$btn-default-color;
+    &:hover{
+        background-color: darken($btn-success,10%);
+    }
 }
 .btn-info{
     @extend %btn;
-    background-color:$btn-info;
+    background-color:rgba($btn-info,0.7);
     color:$btn-default-color;
+    &:hover{
+        background-color: darken($btn-info,10%);
+    }
 }
 .btn-warning{
     @extend %btn;
-    background-color:$btn-warning;
+    background-color:rgba($btn-warning,0.7);
     color:$btn-default-color;
+    &:hover{
+        background-color: darken($btn-warning,10%);
+    }
 }
 .btn-dark{
     @extend %btn;
-    background-color:$btn-dark;
+    background-color:rgba($btn-dark,0.9);
     color:$btn-default-color;
+    &:hover{
+        background-color: lighten($btn-dark,30%);
+    }
 }
