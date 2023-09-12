@@ -29,13 +29,13 @@
 
 .btn-info {
   background-color: rgba(9, 224, 177, 0.7);
-  color: #ffffff; }
+  color: #000000; }
   .btn-info:hover {
     background-color: #07af8a; }
 
 .btn-warning {
   background-color: rgba(247, 122, 5, 0.7);
-  color: #ffffff; }
+  color: #000000; }
   .btn-warning:hover {
     background-color: #c56104; }
 
@@ -472,9 +472,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
       border: 1px solid #000000;
       padding: 10px 5px; }
     .course-section table thead {
-      background-color: #8a059e; }
+      background-color: #f1a6fc; }
       .course-section table thead th {
-        color: #ffffff;
+        color: #000000;
         border: 1px solid #ffffff; }
     .course-section table tbody tr:nth-of-type(even) {
       background-color: #ffffff; }

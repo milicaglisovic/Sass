@@ -33,3 +33,14 @@
     padding:$pt 0 $pb;
     background-color: $bg;
 }
+@function colorYiq($color){
+    $red: red($color);
+    $green: green($color);
+    $blue: blue($color);
+    $yiq: ($red * 0.299) + ($green * 0.587) + ($blue * 0.114);
+    @if ($yiq > 129){
+        @return $black;
+    } @else {
+        @return $white;
+    }
+}

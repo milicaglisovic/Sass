@@ -20,9 +20,9 @@ $tbody-hover-bg:darken($light-gray,15%);
             padding: 10px 5px;
         }
         thead{
-            background-color: $table-head-bg;
+            background-color: lighten($table-head-bg,50%);
             th{
-                color:$thead-color;
+                color:colorYiq(lighten($table-head-bg,50%));
                 border:$thead-border-color;
             }
         }
