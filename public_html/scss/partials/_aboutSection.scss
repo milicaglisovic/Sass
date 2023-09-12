@@ -1,5 +1,8 @@
 $about-bg:$white;
-.about-section{
+/*.about-section{
     padding: 30px 0;
     background-color: $about-bg;
+}*/
+.about-section{
+    @include styleSection(30px,30px,$about-bg);
 }

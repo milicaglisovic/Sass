@@ -6,6 +6,7 @@ $tbody-eben-bg:$white;
 $tbody-hover-bg:darken($light-gray,15%);
 .course-section{
     padding: 50px 0;
+    @include styleSection(30px,30px,transparent);
     table{
         border:$table-border;
         border-collapse: collapse;

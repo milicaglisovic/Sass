@@ -3,10 +3,10 @@
   display: inline-block;
   padding: 5px 15px;
   border: none;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 5px 50% 5px 50%;
+  -moz-border-radius: 5px 50% 5px 50%;
+  -webkit-border-radius: 5px 50% 5px 50%;
+  -o-border-radius: 5px 50% 5px 50%;
   cursor: pointer; }
 
 .btn-default {
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #8a059e; }
 
 header {
-  padding: 20px 0;
+  padding: 30px 0 30px;
   background-color: #8a059e; }
   header .branding {
     text-align: center; }
@@ -422,16 +422,16 @@ template {
 [hidden] {
   display: none; }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Sep 11, 2023, 12:36:45 PM
-    Author     : Korisnik
-*/
+.home-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff; }
+
+/*.about-section{
+    padding: 30px 0;
+    background-color: $about-bg;
+}*/
 .about-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #ffffff; }
 
 /*
@@ -443,14 +443,24 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     Author     : Korisnik
 */
 .service-section {
-  padding: 30px 0; }
+  padding: 30px 0 30px;
+  background-color: transparent; }
 
 .comment-section {
-  padding: 30px 0;
+  /* padding: 30px 0;
+    background-color: $comment-section;*/
+  padding: 30px 0 30px;
   background-color: #ffffff; }
+  .comment-section .comment-img img {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%; }
 
 .course-section {
-  padding: 50px 0; }
+  padding: 50px 0;
+  padding: 30px 0 30px;
+  background-color: transparent; }
   .course-section table {
     border: 1px solid #000000;
     border-collapse: collapse;
@@ -471,16 +481,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     .course-section table tbody tr:hover {
       background-color: #c8c8c8; }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Sep 11, 2023, 12:38:07 PM
-    Author     : Korisnik
-*/
+.contact-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff; }
+
 footer {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #8a059e; }
   footer ul {
     list-style: none;
