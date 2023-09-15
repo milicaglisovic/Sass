@@ -138,7 +138,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  color: #8a059e; }
+  color: #8a059e;
+  margin-top: 0; }
 
 header {
   padding: 30px 0 30px;
@@ -511,12 +512,30 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   /* padding: 30px 0;
     background-color: $comment-section;*/
   padding: 30px 0 30px;
-  background-color: #ffffff; }
-  .comment-section .comment-img img {
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%; }
+  background-color: #ffffff;
+  /*.comment-img{
+        img{
+            @include radius(50%);
+        }
+    }*/ }
+  .comment-section .comment-list {
+    list-style: none;
+    padding: 0; }
+    .comment-section .comment-list .comment-item {
+      display: flex; }
+      .comment-section .comment-list .comment-item .comment-img {
+        flex: 0 0 50px; }
+        .comment-section .comment-list .comment-item .comment-img img {
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -o-border-radius: 50%; }
+      .comment-section .comment-list .comment-item .comment-body {
+        padding-left: 10px; }
+
+@media (min-width: 768px) {
+  .comment-section .comment-list .comment-item .comment-img {
+    flex: 0 0 90px; } }
 
 .course-section {
   padding: 50px 0;
@@ -544,7 +563,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
 
 .contact-section {
   padding: 150px 0 150px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  background-image: url(assets/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed; }
+  .contact-section h2 {
+    text-align: center; }
+  .contact-section .contact-form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto; }
+    .contact-section .contact-form .form-group {
+      margin-bottom: 1.5rem; }
+      .contact-section .contact-form .form-group label {
+        display: block; }
+      .contact-section .contact-form .form-group .form-control {
+        display: block;
+        width: 100%;
+        border: 1px solid #000000;
+        padding: 3px 10px;
+        line-height: 4rem;
+        border-radius: 8px;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -o-border-radius: 8px; }
 
 footer {
   padding: 30px 0 30px;
