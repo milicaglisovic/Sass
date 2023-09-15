@@ -482,7 +482,10 @@ template {
 
 .home-section {
   padding: 150px 0 150px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  background-image: url(assets/home1.avif);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*.about-section{
     padding: 30px 0;
