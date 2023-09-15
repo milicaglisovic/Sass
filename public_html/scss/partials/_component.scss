@@ -1,11 +1,29 @@
-$btn-default:$dark-gray;
+/*$btn-default:$dark-gray;
 $btn-default-color:$white;
 $btn-danger:$red;
 $btn-success:$green;
 $btn-info:$cyan;
 $btn-warning:$orange;
-$btn-dark:$black;
-
+$btn-dark:$black;*/
+$btn-colection:(
+    'default':$dark-gray,
+    'danger':$red,
+    'success':$green,
+    'warning':$orange,
+    'info':$cyan,
+    'dark':lighten($black,10%),
+    'fancy':$purple,
+);
+@each $key,$value in $btn-colection{
+    .btn-#{$key}{
+        @extend %btn;
+        background-color:rgba($value,0.7);
+        color:colorYiq($value);
+        &:hover{
+            background-color: darken($value,10%);
+        }
+    }
+}
 %btn{
     display: inline-block;
     padding: 5px 15px;
@@ -14,13 +32,9 @@ $btn-dark:$black;
     cursor: pointer;
     
 }
+/*
 .btn-default{
-    @extend %btn;
-    background-color:rgba($btn-default,0.7);
-    color:colorYiq($btn-default);
-    &:hover{
-        background-color: darken($btn-default,10%);
-    }
+    
 }
 
 .btn-danger{
@@ -62,4 +76,4 @@ $btn-dark:$black;
     &:hover{
         background-color: lighten($btn-dark,30%);
     }
-}
+}*/
